@@ -6,7 +6,7 @@ class player {
       }
       this.body = Bodies.rectangle(x,y,width,height,options);
       this.width = width;
-      this.image = loadImage("images/girl.png");
+      this.image = loadImage("images/box.png");
 
       this.height = height;
       this.body.label = 'player';
