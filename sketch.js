@@ -41,6 +41,12 @@ function setup() {
       }
       for (var i = 0; i < particles.length; i++) {
         particles[i].display();
+        if(particles[i].body.position.y>370){
+          World.remove(world, particles[i].body);
+              particles.splice(i, 1);
+              i--;
+            
+        }
       }
     ground.display();
     player1.display();
